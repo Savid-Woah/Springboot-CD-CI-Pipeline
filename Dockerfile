@@ -6,7 +6,7 @@ COPY . /app
 RUN mvn clean
 RUN mvn clean package -DskipTests -X
 
-FROM openjdk:19-alpine
+FROM openjdk
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
