@@ -12,6 +12,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("test/")
 public class TestController {
-
-    private final String hola;
 }
