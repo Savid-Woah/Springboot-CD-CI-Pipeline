@@ -12,6 +12,6 @@ public class TestController {
 
     @GetMapping
     public String imHealthy(){
-        return "Im healthy";
+        return "Im still healthy";
     }
 }
